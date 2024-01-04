@@ -6,6 +6,7 @@
 	},
 	"mounts": [
 		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.aws/,target=/home/node/.aws/,type=bind,consistency=cached",
+		"source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
 	],
 	"customizations": {
 		"vscode": {
